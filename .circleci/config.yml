@@ -20,6 +20,12 @@ jobs:
             echo "export PATH=$GOPATH/bin:$PATH" >> $BASH_ENV
             echo "export GIT_SHA1=$CIRCLE_SHA1" >> $BASH_ENV
       - run:
+          name: "Print PATH"
+          command: echo ${PATH}
+      - run:
+          name: "Print bash env"
+          command: echo ${BASH_ENV}
+      - run:
           name: "Say hello"
           command: "echo Hello, World!"
 
