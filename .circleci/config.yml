@@ -23,6 +23,9 @@ jobs:
           name: "Print PATH"
           command: echo ${PATH}
       - run:
+          name: "Print git SHA"
+          command: echo ${GIT_SHA1}
+      - run:
           name: "Print bash env"
           command: echo ${BASH_ENV}
       - run:
